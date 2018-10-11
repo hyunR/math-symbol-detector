@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Math symbol detector</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/0.13.1/tf.js"> </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+</head>
+<body>
+    <div class="gridWraper">
+
+        <div class="header">
+            <span>What's that symbol ?</span>
+        </div>
+
+        <div id="predict_btn">
+            <button id="predict_canvas" class="btn btn-primary btn-block" onclick="predict(this.id)">Predict</button>
+
+        </div>
+
+        <div class="canvaswrapper">
+            <div id="canvas_box" class="canvas-box">
+            </div>
+        </div>
+
+        <div id="clear_btn">
+            <button id="clear_canvas" class="btn btn-warning btn-block" onclick="clearCanvas(this.id)">Clear</button>
+        </div>
+
+        <div id="result">
+        </div>
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
